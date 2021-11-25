@@ -1,0 +1,29 @@
+#imgs {
+    width: 100vw;
+    height: 100vh;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+}
+img{
+    width: 270px;
+    height: 270px;
+}
+.div_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    margin: 0 auto;
+}
+.div_shadow {
+    position: absolute;
+    width: 900px;
+    height: 584px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 rgba(175, 187, 204, 0.15);
+    background: #ffffff;
+    border-radius: 16px;
+    /*position: relative;*/
+}
