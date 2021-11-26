@@ -1,2 +1,4 @@
-# Fuck_Xuexitong
-如你所见
+
+>assets文件夹下存放静态文件,如CSS,JS,IMG等
+
+>template存放html文件

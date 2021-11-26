@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	router:=gin.Default()
-	router.Static("/assets","./assets")
-	router.StaticFile("/","./html/index.html")
+	router := gin.Default()
+	router.Static("/assets", "./assets")
+	router.StaticFile("/", "./html/index.html")
 	router.Run(":8080")
 }
