@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>学习通刷课页面</title>
+    <link rel="stylesheet" href="../assets/css/mine.css"/>
+</head>
+
+<body>
+<div class="main">
+    <!--登录框-->
+    <div class="loginFrame">
+        <!--标题-->
+        <p class="loginTitle">请登录</p>
+        <div class="">
+            <img id="qrcode" src={{ .img }} alt=""/>
+        </div>
+        <span>使用学习通扫码登录</span>
+    </div>
+</div>
+<script src="../assets/js/index.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    var enc = "{{ .enc }}"
+    var uuid = "{{ .uuid}}"
+    $.ajax({
+        type: "POST",
+        url: "/login",
+        dataType: "json",
+        success: function (data) {
+            console.log(data)
+        },
+        }
+    );
+    console.log(enc)
+    console.log(uuid)
+</script>
+</body>
+
+</html>
